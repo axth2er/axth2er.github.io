@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111112;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    
+    user-select: none;
+    -webkit-user-select: none; /* pour les navigateurs Webkit */
+    -ms-user-select: none;    /* pour les navigateurs IE/Edge */
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 28rem;
+}
+
+.main-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wallet-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #60a5fa;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #9ca3af;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.warning-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    background-color: #242425;
+    border: 1px solid #eab308;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+
+.alert-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #eab308;
+    flex-shrink: 0;
+}
+
+.warning-box span {
+    color: #eab308;
+    font-size: 0.875rem;
+}
+
+.address-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.label {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.address-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.address {
+    flex: 1;
+    font-family: monospace;
+    font-size: 0.875rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    word-break: break-all;
+}
+
+.copy-button {
+    background: none;
+    border: none;
+    color: #60a5fa;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+    background-color: rgba(96, 165, 250, 0.1);
+}
+
+.copy-button .tooltip {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    background-color: #1f2937;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.copy-button:hover .tooltip {
+    opacity: 1;
+}
+
+.info-box {
+    background-color: rgba(30, 58, 138, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.info-box p {
+    color: #60a5fa;
+    font-size: 0.875rem;
+}
+
+.warning-box span {
+    margin-left: 5px; /* Ajoute un peu d'espace entre l'icône et le texte */
+}
